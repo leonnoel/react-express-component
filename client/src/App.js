@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Messages from './Messages.js';
+import Messages from './Messages/Messages.js';
 
 class App extends Component {
 
