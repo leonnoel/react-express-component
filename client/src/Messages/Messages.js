@@ -16,23 +16,17 @@ class Messages extends Component {
   }
 
   render() {
-    const defaultStyle = {
-      color: "white",
-      borderColor: "red",
-      borderSize: 1,
-      borderStyle: "solid"
-    }
+
     const style = {
-      ...defaultStyle,
-      margin: 20,
-      padding: 20,
       backgroundColor: this.props.color,
+      width: this.props.width
     }
+
     return (
-      <div className="Messages">
+      <div>
         <h1>Users</h1>
         {this.state.users.map(user =>
-          <div style={style} key={user.name}>{user.msg}</div>
+          <div className="Messages" style={style} key={user.name}>{user.msg}</div>
         )}
       </div>
     );

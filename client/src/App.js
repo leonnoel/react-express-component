@@ -8,7 +8,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Messages color='blue'></Messages>
+        <Messages color='blue' width='300px'></Messages>
+        <Messages color='purple' width='300px'></Messages>
       </div>
     );
   }
